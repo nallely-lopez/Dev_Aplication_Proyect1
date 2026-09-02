@@ -41,6 +41,24 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> { //Clase que def
         backgroundColor: Colors.teal,
         child: const Icon(Icons.add, color: Colors.white), // Icon es un widget que muestra un icono, en este caso, el icono de add, con un color de blanco
       ),
+
+      bottomNavigationBar: BottomNavigationBar( // BottomNavigationBar es un widget que muestra una barra de navegación en la parte inferior de la pantalla, que se utiliza para navegar entre diferentes pantallas
+        currentIndex: 0,// currentIndex es una propiedad que define el índice del icono seleccionado en la barra de navegación, en este caso, el primer icono
+        backgroundColor: Colors.teal, // Color de fondo de la barra de navegación 
+        items: const [ // items es una propiedad que define los iconos de la barra de navegación, en este caso, son dos iconos
+          BottomNavigationBarItem( // BottomNavigationBarItem es un widget que define un icono de la barra de navegación, en este caso, el icono de inicio
+            icon: Icon(Icons.home),// Icon es un widget que muestra un icono, en este caso, el icono de home
+            label: 'Inicio', // label es una propiedad que define el texto que se muestra debajo del icono, en este caso, el texto de Inicio
+          ),
+          BottomNavigationBarItem( //  icono de perfil
+            icon: Icon(Icons.person), // Icon es un widget que muestra un icono, en este caso, el icono de person
+            label: 'Perfil', // label es una propiedad que define el texto que se muestra debajo del icono, en este caso, el texto de Perfil
+          ),
+        ],
+        onTap: (indice) { // onTap es una propiedad que define la acción que se realiza cuando se presiona un icono de la barra de navegación, en este caso, se muestra un mensaje en la consola con el índice del icono presionado
+          print('Tocaste el icono número: $indice'); // print es una función que muestra un mensaje en la consola, en este caso, el mensaje con el índice del icono presionado
+        },
+      ),
     );
   }
 }
