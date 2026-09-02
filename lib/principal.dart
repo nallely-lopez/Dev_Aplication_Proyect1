@@ -13,6 +13,11 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> { //Clase que def
   Widget build(BuildContext context) { //Método que construye la interfaz de usuario de la pantalla principal, es decir, cómo se ve y cómo se comporta la pantalla
     return Scaffold( // Scaffold es un widget que proporciona una estructura básica para la pantalla, como una barra de navegación, un cuerpo y un pie de página
       // Aquí iremos agregando las piezas del Scaffold
+      appBar: AppBar( // AppBar es un widget que proporciona una barra de navegación en la parte superior de la pantalla
+        title: const Text('Anatomía del Scaffold'), // Título de la barra de navegación
+        backgroundColor: const Color.fromARGB(255, 85, 150, 150), // Color de fondo de la barra de navegación
+        foregroundColor: const Color.fromARGB(255, 2, 3, 39), // Color del texto de la barra de navegación
+      ),
     );
   }
 }
