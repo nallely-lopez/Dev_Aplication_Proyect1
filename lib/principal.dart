@@ -33,6 +33,14 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> { //Clase que def
           ],
         ),
       ),
+
+      floatingActionButton: FloatingActionButton( // FloatingActionButton es un widget que muestra un botón flotante en la pantalla, que se utiliza para realizar una acción principal
+        onPressed: () { // onPressed es una propiedad que define la acción que se realiza cuando se presiona el botón flotante
+          print('¡Hiciste clic en el FAB!'); // print es una función que muestra un mensaje en la consola, en este caso, el mensaje
+        },
+        backgroundColor: Colors.teal,
+        child: const Icon(Icons.add, color: Colors.white), // Icon es un widget que muestra un icono, en este caso, el icono de add, con un color de blanco
+      ),
     );
   }
 }
