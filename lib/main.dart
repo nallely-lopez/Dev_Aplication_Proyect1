@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
-import 'principal.dart';
+import 'prueba.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget { //Clase que define la aplicación, es decir, cómo se ve y cómo se comporta la aplicación
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: PantallaPrincipal(),
+      home: Prueba(),
     );
   }
 }
