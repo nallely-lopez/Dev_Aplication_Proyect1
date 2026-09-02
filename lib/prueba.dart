@@ -7,9 +7,11 @@ class Prueba extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Anatomía de Flutter'),
+        title: const Text('Anatomía de Flutter', 
+          style: TextStyle(color: Color.fromARGB(255, 66, 0, 146), fontWeight: FontWeight.bold),
+        ),
       ),
-      body: ListView(
+      body: ListView( 
         children: const [
           ListTile(
             leading: Icon(Icons.star, color: Color.fromARGB(255, 220, 217, 65)),
