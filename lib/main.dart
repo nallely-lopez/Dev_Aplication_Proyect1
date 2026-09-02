@@ -2,21 +2,16 @@ import 'package:flutter/material.dart';
 import 'principal.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MiApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
+class MiApp extends StatelessWidget { //Clase que define la aplicación, es decir, cómo se ve y cómo se comporta la aplicación
+  const MiApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: PantallaPrincipal(),
     );
   }
 }
