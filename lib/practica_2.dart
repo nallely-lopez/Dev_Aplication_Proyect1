@@ -31,7 +31,41 @@ class PantallaPerfil extends StatelessWidget {
                child: Column(
                   mainAxisSize: MainAxisSize.min, // La tarjeta solo ocupa el alto que necesita
                   children: [
-                    Text('Aquí irá la cabecera con el avatar'),
+                    Row (
+                      children: [
+                        const CircleAvatar(
+                          radius: 30, // Radio del avatar
+                          backgroundColor: Colors.indigo, // Color de fondo del avatar
+                          child: Icon(
+                            Icons.person, 
+                            size: 30, 
+                            color: Colors.white
+                          ), // Icono dentro del avatar
+                        ),
+
+                        const SizedBox (width: 16,),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start, // Alineación de los elementos de la columna al inicio
+                          children: const[
+                            Text(
+                              'Nallely López',
+                                style: TextStyle(
+                                fontSize: 18, 
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(height: 4), // Espacio entre el nombre y el correo
+                            Text(
+                              'Ing. en Sistemas Computacionales',
+                              style: TextStyle(
+                                fontSize: 14,
+                                color: Colors.grey,
+                              ),
+                            ),
+                          ]
+                        )
+                      ],
+                    )
                   ],
                ),
             ),
