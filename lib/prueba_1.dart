@@ -21,7 +21,7 @@ class Prueba extends StatelessWidget {
             subtitle: Text('Descripción del elemento 1'),
             trailing: Icon(Icons.arrow_forward),
           ),
-          ListTile(
+          ListTile( 
             leading: Icon(Icons.star, color: Color.fromARGB(255, 220, 217, 65)),
             title: Text('Elemento 2', 
               style: TextStyle(color: Color.fromARGB(255, 146, 31, 199), fontWeight: FontWeight.bold),
