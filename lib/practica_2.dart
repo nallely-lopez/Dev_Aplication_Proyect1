@@ -18,8 +18,25 @@ class PantallaPerfil extends StatelessWidget {
         centerTitle: true, 
         backgroundColor: Colors.indigo, 
       ),
-      body: const Center(
-        child: Text('Aquí irá la tarjeta'),
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0), // Margen exterior respecto a los bordes de la pantalla
+          child: Card(
+            elevation: 8, // Sombra que genera el efecto flotante
+            shape: RoundedRectangleBorder( // Forma de la tarjeta
+                borderRadius: BorderRadius.circular(16), // Bordes redondeados
+              ),
+            child: const Padding(
+                padding: EdgeInsets.all(20.0), // Margen interno de la tarjeta
+               child: Column(
+                  mainAxisSize: MainAxisSize.min, // La tarjeta solo ocupa el alto que necesita
+                  children: [
+                    Text('Aquí irá la cabecera con el avatar'),
+                  ],
+               ),
+            ),
+          ),
+        ),
       ),
     );
   }
