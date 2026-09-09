@@ -27,6 +27,7 @@ class Prueba extends StatelessWidget {
           style: TextStyle(color: primaryPurple, fontWeight: FontWeight.bold),
         ),
       ),
+
       body: FutureBuilder<Student>(
         future: _loadStudentData(),
         builder: (context, snapshot) {
