@@ -3,13 +3,15 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'student.dart';
+import '../models/student.dart';
 
 class Prueba extends StatelessWidget {
   const Prueba({super.key});
 
   Future<Student> _loadStudentData() async {
-    final String response = await rootBundle.loadString('lib/data.json');
+    final String response = await rootBundle.loadString(
+      'assets/data/student.json',
+    );
     final Map<String, dynamic> data = json.decode(response);
     return Student.fromJson(data);
   }
@@ -27,6 +29,7 @@ class Prueba extends StatelessWidget {
           style: TextStyle(color: primaryPurple, fontWeight: FontWeight.bold),
         ),
       ),
+
       body: FutureBuilder<Student>(
         future: _loadStudentData(),
         builder: (context, snapshot) {

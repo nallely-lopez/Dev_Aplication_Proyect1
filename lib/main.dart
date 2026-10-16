@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'prueba_1.dart';
+import 'features/unidad3/enClase/widgetPer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,6 +11,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(debugShowCheckedModeBanner: false, home: Prueba());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+
+      title: 'FlutterGram',
+
+      home: const Dimensiones(),
+    );
   }
 }

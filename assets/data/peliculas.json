@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "titulo": "Interestelar",
+    "imagen": "https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "genero": "Ciencia ficción / Aventura / Drama",
+    "anio": 2014,
+    "descripcion": "Un grupo de científicos viaja a través de un agujero de gusano para buscar un nuevo hogar para la humanidad.",
+    "actores": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"]
+  },
+  {
+    "id": 2,
+    "titulo": "Your Name",
+    "imagen": "https://image.tmdb.org/t/p/w500/q719jXXEzOoYaps6babgKnONONX.jpg",
+    "genero": "Animación / Romance / Fantasía",
+    "anio": 2016,
+    "descripcion": "Dos adolescentes descubren una conexión inexplicable cuando comienzan a intercambiar sus cuerpos de manera misteriosa.",
+    "actores": ["Ryunosuke Kamiki", "Mone Kamishiraishi"]
+  },
+  {
+    "id": 3,
+    "titulo": "101 Dálmatas",
+    "imagen": "https://www.themoviedb.org/t/p/w1280/fWATVXk6oB18QQysBVtJ8UlSqNQ.jpg",
+    "genero": "Animación / Aventura / Familiar",
+    "anio": 1961,
+    "descripcion": "Una pareja de perros dálmatas rescata a sus cachorros de los planes de Cruella de Vil.",
+    "actores": ["Rod Taylor", "Cate Bauer", "Betty Lou Gerson"]
+  }
+]
