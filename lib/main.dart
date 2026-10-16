@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'formulario.dart';
+import 'features/unidad3/enClase/widgetPer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +11,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: FormularioInteractivo(),
+
+      title: 'FlutterGram',
+
+      home: const Dimensiones(),
     );
   }
 }
